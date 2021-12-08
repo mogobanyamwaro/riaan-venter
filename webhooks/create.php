@@ -1,5 +1,6 @@
 <?php
-define('SHOPIFY_APP_SECRET_KEY','JOIDEWIO');
+
+define('SHOPIFY_APP_SECRET_KEY','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');
 
 function verify_request($data,$hmac){
     $verify_hmac = base64_decode(hash_hmac('sha256',$data,SHOPIFY_APP_SECRET_KEY,true));
